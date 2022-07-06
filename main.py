@@ -5,6 +5,7 @@ from time import sleep
 from tkinter import *
 import pygame
 from PIL import ImageTk, Image
+import shutil
 
 path_remove = ""
 path_type = ""
@@ -22,7 +23,7 @@ def roulette():
         if path_type == "file":
             os.remove(path_remove)
         else:
-            os.removedirs(path_remove)
+            shutil.rmtree(path_remove)
         path_type = ""
         path_remove = ""
         label_path.config(text=path_remove)
