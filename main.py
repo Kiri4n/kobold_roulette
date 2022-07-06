@@ -76,7 +76,7 @@ if __name__ == '__main__':
     # label instruction
     label_instruction = Label(
         frame,
-        text='Choisisez le fichier ou le dossier à mettre dans la roulette ',
+        text='Choisissez le fichier ou le dossier à mettre dans la roulette',
         font=('Ariale', 14)
     )
     label_instruction.pack()
@@ -91,7 +91,7 @@ if __name__ == '__main__':
     # button file
     bt_file = Button(
         frame,
-        text="selectionnez un fichier",
+        text="Sélectionner un fichier",
         command=chose_file
     )
     bt_file.pack(pady=5)
@@ -99,7 +99,7 @@ if __name__ == '__main__':
     # button dir
     bt_dir = Button(
         frame,
-        text="selectionnez un dossier",
+        text="Sélectionner un dossier",
         command=chose_dir
     )
     bt_dir.pack(pady=5)
@@ -115,7 +115,7 @@ if __name__ == '__main__':
 
     label_warning = Label(
         frame,
-        text="ATTENTION ce logiciel supprimer VRAIMENT votre fichier/dossier",
+        text="ATTENTION ce logiciel supprime VRAIMENT votre fichier/dossier",
         fg='red'
     )
     label_warning.pack(side=BOTTOM)
